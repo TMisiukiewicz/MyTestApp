@@ -1,4 +1,4 @@
-package com.placeholder.appid;
+package com.test.bundle;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

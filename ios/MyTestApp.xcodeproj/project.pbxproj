@@ -456,7 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTestApp.app/MyTestApp";
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = "2";
 			};
 			name = Debug;
 		};
@@ -481,7 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTestApp.app/MyTestApp";
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = "2";
 			};
 			name = Release;
 		};
@@ -504,12 +504,12 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.placeholder.appid";
-				PRODUCT_NAME = "MyTestApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.bundle";
+				PRODUCT_NAME = "Appname";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = "2";
 				CODE_SIGN_ENTITLEMENTS = MyTestApp/MyTestApp.entitlements;
 			};
 			name = Debug;
@@ -532,11 +532,11 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.placeholder.appid";
-				PRODUCT_NAME = "MyTestApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.bundle";
+				PRODUCT_NAME = "Appname";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = "2";
 				CODE_SIGN_ENTITLEMENTS = MyTestApp/MyTestApp.entitlements;
 			};
 			name = Release;

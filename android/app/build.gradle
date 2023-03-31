@@ -93,12 +93,12 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace 'com.placeholder.appid'
+    namespace 'com.test.bundle'
     defaultConfig {
-        applicationId 'com.placeholder.appid'
+        applicationId 'com.test.bundle'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
+        versionCode 10
         versionName "0.0.1"
     }
 

@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict/>
+  <dict>
+    <key>com.apple.developer.associated-domains</key>
+    <dict>
+      <key>applinks</key>
+      <dict>
+        <key>details</key>
+        <array>
+          <dict>
+            <key>appIDs</key>
+            <array>
+              <string>ABCDE12345.com.example.app</string>
+              <string>ABCDE12345.com.example.app2</string>
+            </array>
+            <key>components</key>
+            <array>
+              <dict>
+                <key>#</key>
+                <string>no_universal_links</string>
+                <key>exclude</key>
+                <true/>
+                <key>comment</key>
+                <string>Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link.</string>
+              </dict>
+              <dict>
+                <key>/</key>
+                <string>/buy/*</string>
+                <key>comment</key>
+                <string>Matches any URL with a path that starts with /buy/.</string>
+              </dict>
+              <dict>
+                <key>/</key>
+                <string>/help/website/*</string>
+                <key>exclude</key>
+                <true/>
+                <key>comment</key>
+                <string>Matches any URL with a path that starts with /help/website/ and instructs the system not to open it as a universal link.</string>
+              </dict>
+              <dict>
+                <key>/</key>
+                <string>/help/*</string>
+                <key>?</key>
+                <dict>
+                  <key>articleNumber</key>
+                  <string>????</string>
+                </dict>
+                <key>comment</key>
+                <string>Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters.</string>
+              </dict>
+            </array>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </dict>
 </plist>

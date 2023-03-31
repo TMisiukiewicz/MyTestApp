@@ -1,4 +1,73 @@
 {
-  "name": "MyTestApp",
-  "displayName": "MyTestApp"
+  "name": "App name",
+  "displayName": "MyTestApp",
+  "orientation": "default",
+  "androidStatusBar": {
+    "barStyle": "light-content",
+    "hidden": true,
+    "translucent": true
+  },
+  "scheme": "demo",
+  "android": {
+    "package": "com.test.bundle",
+    "permissions": ["CAMERA"],
+    "intentFilters": [
+      {
+        "autoVerify": true,
+        "action": "VIEW",
+        "data":
+        {
+          "scheme": "https",
+          "host": "mydomain.com",
+          "pathPrefix": "/applogin"
+        },
+        "category": [
+          "BROWSABLE",
+          "DEFAULT"
+        ]
+      }
+    ],
+    "versionCode": 10,
+    "allowBackup": false,
+    "backgroundColor": "#fff",
+    "jsEngine": "jsc",
+    "userInterfaceStyle": "automatic",
+    "softwareKeyboardLayoutMode": "pan"
+  },
+  "ios": {
+    "bundleIdentifier": "com.test.bundle",
+    "buildNumber": 2,
+    "isTabletOnly": true,
+    "userInterfaceStyle": "dark",
+    "associatedDomains": {
+      "applinks": {
+          "details": [
+               {
+                 "appIDs": [ "ABCDE12345.com.example.app", "ABCDE12345.com.example.app2" ],
+                 "components": [
+                   {
+                      "#": "no_universal_links",
+                      "exclude": true,
+                      "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+                   },
+                   {
+                      "/": "/buy/*",
+                      "comment": "Matches any URL with a path that starts with /buy/."
+                   },
+                   {
+                      "/": "/help/website/*",
+                      "exclude": true,
+                      "comment": "Matches any URL with a path that starts with /help/website/ and instructs the system not to open it as a universal link."
+                   },
+                   {
+                      "/": "/help/*",
+                      "?": { "articleNumber": "????" },
+                      "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+                   }
+                 ]
+               }
+           ]
+       }
+  }
+}
 }
