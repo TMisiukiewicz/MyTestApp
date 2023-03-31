@@ -1,4 +1,4 @@
-package com.mytestapp;
+package com.placeholder.appid;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
