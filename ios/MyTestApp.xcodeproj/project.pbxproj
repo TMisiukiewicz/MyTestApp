@@ -46,6 +46,7 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-MyTestApp-MyTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTestApp-MyTestAppTests.release.xcconfig"; path = "Target Support Files/Pods-MyTestApp-MyTestAppTests/Pods-MyTestApp-MyTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FE57CF9796134B658D5581AD /* noop-file.swift */ = {isa = PBXFileReference; name = "noop-file.swift"; path = "MyTestApp/noop-file.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		4824C7E91A6B4F91BE1FDDB7 /* MyTestApp-Bridging-Header.h */ = {isa = PBXFileReference; name = "MyTestApp-Bridging-Header.h"; path = "MyTestApp/MyTestApp-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				FE57CF9796134B658D5581AD /* noop-file.swift */,
+				4824C7E91A6B4F91BE1FDDB7 /* MyTestApp-Bridging-Header.h */,
 			);
 			name = MyTestApp;
 			sourceTree = "<group>";
@@ -247,6 +249,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				80A607BBBF9949F59B4B28F4 /* MyTestApp-Bridging-Header.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +459,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTestApp.app/MyTestApp";
-				TARGETED_DEVICE_FAMILY = "2";
+				TARGETED_DEVICE_FAMILY = "1";
+				SWIFT_OBJC_BRIDGING_HEADER = MyTestApp/MyTestApp-Bridging-Header.h;
 			};
 			name = Debug;
 		};
@@ -481,7 +485,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTestApp.app/MyTestApp";
-				TARGETED_DEVICE_FAMILY = "2";
+				TARGETED_DEVICE_FAMILY = "1";
+				SWIFT_OBJC_BRIDGING_HEADER = MyTestApp/MyTestApp-Bridging-Header.h;
 			};
 			name = Release;
 		};
@@ -505,12 +510,13 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.bundle";
-				PRODUCT_NAME = "Appname";
+				PRODUCT_NAME = "MyTestApp";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
-				TARGETED_DEVICE_FAMILY = "2";
+				TARGETED_DEVICE_FAMILY = "1";
 				CODE_SIGN_ENTITLEMENTS = MyTestApp/MyTestApp.entitlements;
+				SWIFT_OBJC_BRIDGING_HEADER = MyTestApp/MyTestApp-Bridging-Header.h;
 			};
 			name = Debug;
 		};
@@ -533,11 +539,12 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.bundle";
-				PRODUCT_NAME = "Appname";
+				PRODUCT_NAME = "MyTestApp";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
-				TARGETED_DEVICE_FAMILY = "2";
+				TARGETED_DEVICE_FAMILY = "1";
 				CODE_SIGN_ENTITLEMENTS = MyTestApp/MyTestApp.entitlements;
+				SWIFT_OBJC_BRIDGING_HEADER = MyTestApp/MyTestApp-Bridging-Header.h;
 			};
 			name = Release;
 		};
