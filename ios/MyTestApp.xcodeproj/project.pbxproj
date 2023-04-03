@@ -12,8 +12,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		36BBB36FFDC5D4C8D30488A7 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A313EF2D4D19130CBFC85638 /* ExpoModulesProvider.swift */; };
 		7699B88040F8A987B510C191 /* libPods-MyTestApp-MyTestAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MyTestApp-MyTestAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		DE1015324B348ECAD5F7D29E /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9D4EA7C7887359BF160F2 /* ExpoModulesProvider.swift */; };
 		FB333ECCAB2744F0A529EDFD /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE57CF9796134B658D5581AD /* noop-file.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +46,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-MyTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MyTestApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-MyTestApp-MyTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTestApp-MyTestAppTests.release.xcconfig"; path = "Target Support Files/Pods-MyTestApp-MyTestAppTests/Pods-MyTestApp-MyTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8FD9D4EA7C7887359BF160F2 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MyTestApp-MyTestAppTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		A313EF2D4D19130CBFC85638 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MyTestApp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FE57CF9796134B658D5581AD /* noop-file.swift */ = {isa = PBXFileReference; name = "noop-file.swift"; path = "MyTestApp/noop-file.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		FE57CF9796134B658D5581AD /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "MyTestApp/noop-file.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		399800D09E61CF2FC0BB5261 /* MyTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				A313EF2D4D19130CBFC85638 /* ExpoModulesProvider.swift */,
+			);
+			name = MyTestApp;
+			sourceTree = "<group>";
+		};
+		6220198E0BABED2BAEA81BD1 /* MyTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FD9D4EA7C7887359BF160F2 /* ExpoModulesProvider.swift */,
+			);
+			name = MyTestAppTests;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +145,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				AF4596C08F4458F90CF7F21F /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -138,6 +159,15 @@
 				00E356EE1AD99517003FC87E /* MyTestAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AF4596C08F4458F90CF7F21F /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				399800D09E61CF2FC0BB5261 /* MyTestApp */,
+				6220198E0BABED2BAEA81BD1 /* MyTestAppTests */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -408,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* MyTestAppTests.m in Sources */,
+				DE1015324B348ECAD5F7D29E /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +449,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				FB333ECCAB2744F0A529EDFD /* noop-file.swift in Sources */,
+				36BBB36FFDC5D4C8D30488A7 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,10 +485,11 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTestApp.app/MyTestApp";
 				TARGETED_DEVICE_FAMILY = "2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTestApp.app/MyTestApp";
 			};
 			name = Debug;
 		};
@@ -478,10 +511,11 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTestApp.app/MyTestApp";
 				TARGETED_DEVICE_FAMILY = "2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTestApp.app/MyTestApp";
 			};
 			name = Release;
 		};
@@ -491,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyTestApp/MyTestApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MyTestApp/Info.plist;
@@ -504,13 +539,13 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.bundle";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.bundle;
 				PRODUCT_NAME = "Appname";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
 				TARGETED_DEVICE_FAMILY = "2";
-				CODE_SIGN_ENTITLEMENTS = MyTestApp/MyTestApp.entitlements;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -520,6 +555,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyTestApp/MyTestApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = MyTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -532,12 +568,12 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.bundle";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.bundle;
 				PRODUCT_NAME = "Appname";
 				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
 				TARGETED_DEVICE_FAMILY = "2";
-				CODE_SIGN_ENTITLEMENTS = MyTestApp/MyTestApp.entitlements;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

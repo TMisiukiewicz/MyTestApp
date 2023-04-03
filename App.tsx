@@ -16,7 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
+import * as Application from 'expo-application';
 import {
   Colors,
   DebugInstructions,
@@ -56,6 +56,8 @@ function Section({children, title}: SectionProps): JSX.Element {
 }
 
 function App(): JSX.Element {
+  const appId = Application.applicationId;
+  console.log({appId});
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
