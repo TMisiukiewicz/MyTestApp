@@ -8,7 +8,17 @@
     "translucent": true
   },
   "scheme": "demo",
-  "plugins": ["./plugins/withNewString.js"],
+  "plugins": [
+   "./plugins/withNewString.js",
+   [
+    "react-native-image-picker",
+      {
+      "photoLibraryPermission": "Allow your app to use photo library",
+      "cameraPermission": "Allow your app to use camera",
+      "microphonePermission": "allow your app to use microphone"
+      }
+  ]
+  ],
   "android": {
     "package": "com.test.bundle",
     "permissions": ["CAMERA"],

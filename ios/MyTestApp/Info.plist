@@ -45,8 +45,14 @@
         </dict>
       </dict>
     </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>Allow your app to use camera</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string/>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>allow your app to use microphone</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Allow your app to use photo library</string>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
     <key>UIRequiredDeviceCapabilities</key>
